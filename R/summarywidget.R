@@ -36,7 +36,7 @@ summarywidget <- function(data,
     group <- NULL
   }
 
-  statistic <- match.arg(statistic)
+  # statistic <- match.arg(statistic)
 
   # If selection is given, apply it
   if (!is.null(selection)) {

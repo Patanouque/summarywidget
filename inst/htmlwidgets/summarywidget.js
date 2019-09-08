@@ -56,7 +56,7 @@ HTMLWidgets.widget({
               value = 100*values.length;
               break;
           }
-
+          console.log(values)
           if (x.settings.digits !== null) value = value.toFixed(x.settings.digits);
           el.innerText = value;
        };

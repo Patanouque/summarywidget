@@ -1,7 +1,11 @@
-SummaryWidget is an [HTML widget](http://www.htmlwidgets.org) which works with
-[Crosstalk](https://rstudio.github.io/crosstalk/index.html) to display a single
-summary statistic. The statistic updates when the Crosstalk selection changes. A SummaryWidget can display the count, sum or mean of one column of selected data.
-It can also have a fixed filter that selects a subset of the full dataset.
+Fork crosstalk
 
-For more information and examples see the
-[full documentation](https://kent37.github.io/summarywidget).
+on a enlevé le check d'arguments pour pouvoir passer n'importe quel nom de fonction
+On peut maintenant ajouter une statistique à partir du fichier js seulement, en ajouttant des cases
+
+TODO :
+Passer dans "data" depuis r non plus une colonne mais une table entière (l'argument x de createWidget) et voir si on peut traiter ça en js
+
+Il faudrait essayer de changer le nom du package
+
+http://learnjsdata.com/

@@ -9,3 +9,5 @@ Passer dans "data" depuis r non plus une colonne mais une table entière (l'argu
 Il faudrait essayer de changer le nom du package
 
 http://learnjsdata.com/
+
+ce serait lourd de brancher r2d3 sur crosstalk

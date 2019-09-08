@@ -41,7 +41,7 @@ HTMLWidgets.widget({
           var value = 0;
           switch (x.settings.statistic) {
             case 'count':
-              value = values.length;
+              value = 10*values.length;
               break;
             case 'sum':
               value = values.reduce(function(acc, val) {return acc + val;}, 0);

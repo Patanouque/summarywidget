@@ -52,6 +52,9 @@ HTMLWidgets.widget({
             case 'test':
               value = 10*values.length;
               break;
+            case 'test2':
+              value = 100*values.length;
+              break;
           }
 
           if (x.settings.digits !== null) value = value.toFixed(x.settings.digits);

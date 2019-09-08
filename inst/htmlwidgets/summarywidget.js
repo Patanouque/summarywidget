@@ -41,13 +41,16 @@ HTMLWidgets.widget({
           var value = 0;
           switch (x.settings.statistic) {
             case 'count':
-              value = 10*values.length;
+              value = values.length;
               break;
             case 'sum':
               value = values.reduce(function(acc, val) {return acc + val;}, 0);
               break;
             case 'mean':
               value = values.reduce(function(acc, val) {return acc + val;}, 0) / values.length;
+              break;
+            case 'test':
+              value = 10*values.length;
               break;
           }
 

@@ -21,7 +21,7 @@
 #' @seealso \url{https://kent37.github.io/summarywidget}
 summarywidget <- function(data,
                           statistic=c("count", "sum", "mean", "test"), column = NULL,
-                          selection=NULL, digits=0,
+                          selection=NULL, digits=0, column_by = NULL,
                           width=NULL, height=NULL, elementId = NULL) {
 
   if (crosstalk::is.SharedData(data)) {
@@ -62,11 +62,16 @@ summarywidget <- function(data,
     if (!(column %in% colnames(data)))
       stop("No ", column, " column in data.")
     data = data[[column]]
+    
+    if (!(column_by %in% colnames(data)))
+      stop("No ", column, " column in data.")
+    data_by = data[[column_by]]
   }
 
   # forward options using x
   x = list(
     data = data,
+    data_by = data_by,
     settings = list(
       statistic = statistic,
       digits = digits,

@@ -11,3 +11,6 @@ Il faudrait essayer de changer le nom du package
 http://learnjsdata.com/
 
 ce serait lourd de brancher r2d3 sur crosstalk
+
+
+https://excalidraw.com/#json=5723540200357888,LYgIVXeSVfwG8Xr2fwO4Vw
